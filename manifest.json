@@ -1,0 +1,10 @@
+{
+    "name": "Einkaufsliste",
+    "short_name": "Einkaufsliste",
+    "theme_color": "#560164",
+    "background_color": "#560164",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/einkaufsliste/",
+    "start_url": "/einkaufsliste/"
+  }

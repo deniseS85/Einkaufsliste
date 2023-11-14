@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Maripol</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+  <link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="manifest" href="manifest.json">
+  <script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+  <h1>Maripol</h1>
+
+  <div class="returnbutton">
+    <img src="Images/pfeil.png" onclick="history.back();">
+  </div>
+
+  <div class="shoppingcart">
+    <a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+    <span id="shoppingCartProductTotal" class="number">2</span>
+  </div>
+
+  <div class="productList">
+    <img src="Images/papelcocina.png" loading="lazy" onclick="showproductwindow(this)" name="Papel de cocina">
+    <img src="Images/papelhigienico.png" loading="lazy" onclick="showproductwindow(this)" name="Papel higi&eacutenico">
+    <img src="Images/sumastar.png" loading="lazy" onclick="showproductwindow(this)" name="Suma Star">
+    <img src="Images/lejia.png" loading="lazy" onclick="showproductwindow(this)" name="Lej&iacutea">
+    <img src="Images/sumacalc.png" loading="lazy" onclick="showproductwindow(this)" name="Suma Calc">
+    <img src="Images/guantes.png" loading="lazy" onclick="showproductwindow(this)" name="Guantes negros M">
+    <img src="Images/cajallevar.png" loading="lazy" onclick="showproductwindow(this)" name="Caja para llevar grande">
+    <img src="Images/cajapeq.png" loading="lazy" onclick="showproductwindow(this)" name="Caja para llevar pequeña">
+    <img src="Images/servilletas40x40.png" loading="lazy" onclick="showproductwindow(this)" name="Servilletas 40x40cm">
+    <img src="Images/pincho18.png" loading="lazy" onclick="showproductwindow(this)" name="Pincho 18cm">
+    <img src="Images/pincho15.png" loading="lazy" onclick="showproductwindow(this)" name="Pincho 15cm">
+    <img src="Images/jabonmano.png" loading="lazy" onclick="showproductwindow(this)" name="Jab&oacuten de mano">
+    <img src="Images/sumaultra.png" loading="lazy" onclick="showproductwindow(this)" name="Suma Ultra">
+    <img src="Images/sumarinse.png" loading="lazy" onclick="showproductwindow(this)" name="Suma Rinse">
+  </div>
+
+  <div class="productwindowbackground"></div>
+  
+</body>

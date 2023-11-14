@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Warenkorb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+    <link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+    <script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+    <h1>Warenkorb</h1>
+
+    <div class="shoppingcartList"></div>
+
+    <div class="returnbutton">
+        <img src="Images/pfeil.png" onclick="history.back()">
+    </div>
+    
+    <div class="productwindowbackground"></div>
+
+    <script>
+        insertShoppingcartProducts('Verduras');
+        insertShoppingcartProducts('Mercadona');
+        insertShoppingcartProducts('Eroski');
+        insertShoppingcartProducts('Hierbas');
+        insertShoppingcartProducts('Chico');
+        insertShoppingcartProducts('Calimax');
+        insertShoppingcartProducts('Ibifood');
+        insertShoppingcartProducts('Montiel');
+        insertShoppingcartProducts('Menorquina');
+        insertShoppingcartProducts('Maripol');
+        insertShoppingcartProducts('Cash Lotto');
+
+    </script>
+
+</body>
+</html>

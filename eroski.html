@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Eroski</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+	<link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+	<h1>Eroski</h1>
+
+	<div class="returnbutton">
+		<img src="Images/pfeil.png" onclick="history.back()">
+	</div>
+
+	<div class="shoppingcart">
+		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+		<span id="shoppingCartProductTotal" class="number">2</span>
+	</div>
+
+	<div class="productList">
+		<img src="Images/gazpacho.png" loading="lazy" onclick="showproductwindow(this)" name="Gazpacho">
+		<img src="Images/sandwichqueso.png" loading="lazy" onclick="showproductwindow(this)" name="Queso para s&aacutendwich">
+		<img src="Images/manchego.png" loading="lazy" onclick="showproductwindow(this)" name="Manchego">
+		<img src="Images/philadelphia.png" loading="lazy" onclick="showproductwindow(this)" name="Philadelphia">
+		<img src="Images/bacon.png" loading="lazy" onclick="showproductwindow(this)" name="Bacon">
+		<img src="Images/jamonserrano.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten serrano">
+		<img src="Images/jamonyork.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten york">
+		<img src="Images/atun.png" loading="lazy" onclick="showproductwindow(this)" name="At&uacuten fresco">
+		<!-- <img src="Images/solis.png" loading="lazy" onclick="showproductwindow(this)" name="Solis"> -->
+		<img src="Images/currypowder.png" loading="lazy" onclick="showproductwindow(this)" name="Polvo de curry">
+		<img src="Images/currypaste.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta de curry">
+		<img src="Images/pepinillo.png" loading="lazy" onclick="showproductwindow(this)" name="Pepinillo">
+		<img src="Images/cremabalsamico.png" loading="lazy" onclick="showproductwindow(this)" name="Crema de bals&aacutemico">
+		<img src="Images/caramel.png" loading="lazy" onclick="showproductwindow(this)" name="Caramelo">
+		<!-- <img src="Images/vinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre"> -->
+		<img src="Images/bakingpowder.png" loading="lazy" onclick="showproductwindow(this)" name="Polvo de hornear">
+		<img src="Images/pekannut.png" loading="lazy" onclick="showproductwindow(this)" name="Nueces de pecanas">
+		<!-- <img src="Images/walnut.png" loading="lazy" onclick="showproductwindow(this)" name="Nueces"> -->
+		<img src="Images/caldopollo.png" loading="lazy" onclick="showproductwindow(this)" name="Caldo Pollo">
+		<img src="Images/caldopescado.png" loading="lazy" onclick="showproductwindow(this)" name="Caldo Pescado">
+		<img src="Images/leche.png" loading="lazy" onclick="showproductwindow(this)" name="Leche">
+		<img src="Images/miel.png" loading="lazy" onclick="showproductwindow(this)" name="Miel">
+		<img src="Images/mostazadulce.png" loading="lazy" onclick="showproductwindow(this)" name="Mostaza bavaria">
+		<img src="Images/salfina.png" loading="lazy" onclick="showproductwindow(this)" name="Sal fina">
+		<img src="Images/salgordo.png" loading="lazy" onclick="showproductwindow(this)" name="Sal gorda">
+		<img src="Images/harina.png" loading="lazy" onclick="showproductwindow(this)" name="Harina de trigo">
+		<img src="Images/harinacrepe.png" loading="lazy" onclick="showproductwindow(this)" name="Harina reposter&iacutea">
+		<img src="Images/kelloggs.png" loading="lazy" onclick="showproductwindow(this)" name="Kelloggs"> 
+		<img src="Images/azucar.png" loading="lazy" onclick="showproductwindow(this)" name="Az&uacutecar">
+		<img src="Images/azucarmoreno.png" loading="lazy" onclick="showproductwindow(this)" name="Az&uacutecar moreno">
+		<img src="Images/alu.png" loading="lazy" onclick="showproductwindow(this)" name="Papel de aluminio">
+		<img src="Images/film.png" loading="lazy" onclick="showproductwindow(this)" name="Film transparente">
+		<img src="Images/esponja.png" loading="lazy" onclick="showproductwindow(this)" name="Esponja Scotch Brite">
+		<img src="Images/esponjametal.png" loading="lazy" onclick="showproductwindow(this)" name="Esponja met&aacutelica">
+		<!-- <img src="Images/sanytol.png" loading="lazy" onclick="showproductwindow(this)" name="Sanytol"> -->
+		<img src="Images/detergente.png" loading="lazy" onclick="showproductwindow(this)" name="Detergente">
+		<img src="Images/servilleta33x33.png" loading="lazy" onclick="showproductwindow(this)" name="Servilletas 33x33cm">
+		<img src="Images/remolacha.png" loading="lazy" onclick="showproductwindow(this)" name="Remolacha">
+		<img src="Images/nata.png" loading="lazy" onclick="showproductwindow(this)" name="Nata para cocinar">
+		<img src="Images/zumomanzana.png" loading="lazy" onclick="showproductwindow(this)" name="Zumo de manzana">
+		<img src="Images/zumonaranja.png" loading="lazy" onclick="showproductwindow(this)" name="Zumo de naranja">
+		<img src="Images/zumopina.png" loading="lazy" onclick="showproductwindow(this)" name="Zumo de pi&ntildea">
+		
+	</div>
+	
+	<div class="productwindowbackground"></div>
+
+</body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Cash Lotto</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+	<link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+	<h1>Cash Lotto</h1>
+
+	<div class="returnbutton">
+		<img src="Images/pfeil.png" onclick="history.back()">
+	</div>
+
+	<div class="shoppingcart">
+		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+		<span id="shoppingCartProductTotal" class="number">2</span>
+	</div>
+
+	<div class="productList">
+		<img src="Images/jamoncocido.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten cocido">
+		<img src="Images/solis.png" loading="lazy" onclick="showproductwindow(this)" name="Solis">
+		<img src="Images/pasta.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta Linguine">
+		<img src="Images/vinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre">
+		<img src="Images/Nutella.png" loading="lazy" onclick="showproductwindow(this)" name="Nutella en porciones">
+		<img src="Images/walnut.png" loading="lazy" onclick="showproductwindow(this)" name="Nueces">
+		<img src="Images/frutossecos.png" loading="lazy" onclick="showproductwindow(this)" name="Frutos Secos">
+		<img src="Images/sanytol.png" loading="lazy" onclick="showproductwindow(this)" name="Sanytol">
+		<img src="Images/aceitunas.png" loading="lazy" onclick="showproductwindow(this)" name="Aceitunas">
+		<img src="Images/guindillas.png" loading="lazy" onclick="showproductwindow(this)" name="Guindillas">
+		<img src="Images/ajovinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo en vinagre">
+        <img src="Images/plasticbag.png" loading="lazy" onclick="showproductwindow(this)" name="Bolsa de frescura">
+        <img src="Images/sonnenblumenkerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de girasol">
+		<img src="Images/kurbiskerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de calabaza">
+
+	</div>
+
+	<div class="productwindowbackground"></div>
+
+</body>

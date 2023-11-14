@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Chico</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+	<link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+	<h1>Chico</h1>
+
+	<div class="returnbutton">
+		<img src="Images/pfeil.png" onclick="history.back()">
+	</div>
+
+	<div class="shoppingcart">
+		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+		<span id="shoppingCartProductTotal" class="number">2</span>
+	</div>
+
+	<div class="productList">
+		<img src="Images/pollo.png" loading="lazy" onclick="showproductwindow(this)" name="Pechuga de pollo">
+		<img src="Images/escalope.png" loading="lazy" onclick="showproductwindow(this)" name="Escalope">
+		<!-- <img src="Images/entrecrote.png" loading="lazy" onclick="showproductwindow(this)" name="Entrecrote 300gr"> -->
+		<img src="Images/carnepicada.png" loading="lazy" onclick="showproductwindow(this)" name="Carne picada mixta">
+		<img src="Images/huevo.png" loading="lazy" onclick="showproductwindow(this)" name="Huevos L">
+		<img src="Images/atunlata.png" loading="lazy" onclick="showproductwindow(this)" name="At&uacuten en lata &#145Isabel&#145">
+		<img src="Images/salsachocolate.png" loading="lazy" onclick="showproductwindow(this)" name="Salsa de chocolate">
+		<!-- <img src="Images/Nutella.png" loading="lazy" onclick="showproductwindow(this)" name="Nutella en porciones"> -->
+		<img src="Images/mantequillaporcion.png" loading="lazy" onclick="showproductwindow(this)" name="Mantequilla en porciones">
+		<img src="Images/mielporcion.png" loading="lazy" onclick="showproductwindow(this)" name="Miel en porciones">
+		<img src="Images/cacao.png" loading="lazy" onclick="showproductwindow(this)" name="Batido de chocolate">
+		<img src="Images/nataspray.png" loading="lazy" onclick="showproductwindow(this)" name="Nata spray">
+		<img src="Images/aceitefreir.png" loading="lazy" onclick="showproductwindow(this)" name="Aceite para fre&iacuter">
+		<img src="Images/aceiteoliva.png" loading="lazy" onclick="showproductwindow(this)" name="Aceite de oliva 5l">
+		<img src="Images/helado.png" loading="lazy" onclick="showproductwindow(this)" name="Helado de vainilla en vasitos">
+		<img src="Images/sesamo.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de s&eacutesamo">
+		<img src="Images/romeroseco.png" loading="lazy" onclick="showproductwindow(this)" name="Romero seco">
+		<img src="Images/pimientamolida.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta molida 750g">
+		<img src="Images/pimientagordo.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta grano 750g">
+		<img src="Images/pimenton.png" loading="lazy" onclick="showproductwindow(this)" name="Pimenton dulce">
+		<img src="Images/canela.png" loading="lazy" onclick="showproductwindow(this)" name="Canela en rama">
+		<img src="Images/oregano.png" loading="lazy" onclick="showproductwindow(this)" name="Oregano 750g">
+		<img src="Images/azucarglass.png" loading="lazy" onclick="showproductwindow(this)" name="Az&uacutecar glass 750g"> 	
+		<img src="Images/jengibremolido.png" loading="lazy" onclick="showproductwindow(this)" name="Jengibre molido 750g">
+		
+	</div>
+	
+	<div class="productwindowbackground"></div>
+	
+</body>

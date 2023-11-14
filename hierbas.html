@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Verduras</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+	<link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+	<h1>Hierbas</h1>
+
+	<div class="returnbutton">
+		<img src="Images/pfeil.png" onclick="history.back()">
+	</div>
+
+	<div class="shoppingcart">
+		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+		<span id="shoppingCartProductTotal" class="number">2</span>
+	</div>
+
+	<div class="productList">
+
+		<img src="Images/perejil.png" loading="lazy" onclick="showproductwindow(this)" name="Perejil">
+		<img src="Images/albahaca.png" loading="lazy" onclick="showproductwindow(this)" name="Albahaca">
+		<img src="Images/menta.png" loading="lazy" onclick="showproductwindow(this)" name="Menta">
+		<img src="Images/avocado.png" loading="lazy" onclick="showproductwindow(this)" name="Aguacate mediano">
+		<!-- <img src="Images/naranja.png" loading="lazy" onclick="showproductwindow(this)" name="Naranja"> -->
+
+	</div>
+	
+	<div class="productwindowbackground"></div>
+
+</body>

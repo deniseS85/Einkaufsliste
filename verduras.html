@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Verduras</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="apple-touch-icon" href="Images/homescreenicon.png"/>
+	<link rel="icon" href="Images/shoppingcarticon.png" size="16x16" type="image/png">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</head>
+<body>
+	<h1>Verduras</h1>
+
+	<div class="returnbutton">
+		<img src="Images/pfeil.png" onclick="history.back()">
+	</div>
+
+	<div class="shoppingcart">
+		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+		<span id="shoppingCartProductTotal" class="number">2</span>
+	</div>
+
+	<div class="productList">
+		
+		<!-- <img src="Images/pimientoamarillo.png" loading="lazy" onclick="showproductwindow(this)" name="Pimiento amarillo"> -->
+		<img src="Images/tomateloncha.png" loading="lazy" onclick="showproductwindow(this)" name="Tomate grande">
+		<img src="Images/cebollaverde.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla verde">
+		<img src="Images/packchoy.png" loading="lazy" onclick="showproductwindow(this)" name="Packchoy">
+		<img src="Images/ajopelado.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo pelado">
+		<img src="Images/estrago.png" loading="lazy" onclick="showproductwindow(this)" name="Estrago">
+		<img src="Images/cebolla.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla">
+		<img src="Images/patatas.png" loading="lazy" onclick="showproductwindow(this)" name="Patatas blancas">
+
+	</div>
+	
+	<div class="productwindowbackground"></div>
+
+</body>
