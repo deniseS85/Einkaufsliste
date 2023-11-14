@@ -12,30 +12,32 @@
     <script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-    <h1>Warenkorb</h1>
+    <div class="shopping-list-container">
+        <h1>Warenkorb</h1>
 
-    <div class="shoppingcartList"></div>
+        <div class="shoppingcartList"></div>
 
-    <div class="returnbutton">
-        <img src="Images/pfeil.png" onclick="history.back()">
+        <div class="returnbutton">
+            <img src="Images/pfeil.png" onclick="history.back()">
+        </div>
+        
+        <div class="productwindowbackground"></div>
+
+        <script>
+            insertShoppingcartProducts('Verduras');
+            insertShoppingcartProducts('Mercadona');
+            insertShoppingcartProducts('Eroski');
+            insertShoppingcartProducts('Hierbas');
+            insertShoppingcartProducts('Chico');
+            insertShoppingcartProducts('Calimax');
+            insertShoppingcartProducts('Ibifood');
+            insertShoppingcartProducts('Montiel');
+            insertShoppingcartProducts('Menorquina');
+            insertShoppingcartProducts('Maripol');
+            insertShoppingcartProducts('Cash Lotto');
+
+        </script>
     </div>
-    
-    <div class="productwindowbackground"></div>
-
-    <script>
-        insertShoppingcartProducts('Verduras');
-        insertShoppingcartProducts('Mercadona');
-        insertShoppingcartProducts('Eroski');
-        insertShoppingcartProducts('Hierbas');
-        insertShoppingcartProducts('Chico');
-        insertShoppingcartProducts('Calimax');
-        insertShoppingcartProducts('Ibifood');
-        insertShoppingcartProducts('Montiel');
-        insertShoppingcartProducts('Menorquina');
-        insertShoppingcartProducts('Maripol');
-        insertShoppingcartProducts('Cash Lotto');
-
-    </script>
 
 </body>
 </html>

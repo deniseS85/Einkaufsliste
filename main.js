@@ -72,7 +72,7 @@ function selectunit(element) {
         units[i].style.backgroundColor = "";
 
     }
-    element.style.backgroundColor = "#ed30cd";
+    element.style.backgroundColor = "var(--bg-header)";
     unitvalue.innerHTML = element.innerHTML;
     unitvalueplural.innerHTML = element.getAttribute("name");
     
@@ -149,7 +149,13 @@ function showShoppingcartProductTotal() {
     var amount = getShoppingcartProductTotal();
 
     if(totalElement) {
-        (amount == 0) ? totalElement.innerHTML = "" : totalElement.innerHTML = amount;
+        if (amount == 0) {
+            totalElement.innerHTML = '';
+            totalElement.classList.remove('number');
+        } else {
+            totalElement.innerHTML = amount;
+            totalElement.classList.add('number');
+        }
     }
    
 }
@@ -310,10 +316,10 @@ function insertShoppingcartProducts(category) {
         ShoppingcartTable += "<table border=\"1\" width=\"100%\" align=\"center\">";
         
         for(var k in ShoppingCartObject) {
-            ShoppingcartTable += "<tr>";
-            ShoppingcartTable += "<td width=\"50%\" style=\"text-shadow: 1px 1px 4px #ff1cf0;\">" + ShoppingCartObject[k].title + "</td>";
-            ShoppingcartTable += "<td style=\"text-shadow: 1px 1px 4px #ff1cf0;\">" + ShoppingCartObject[k].number + " " + ShoppingCartObject[k].unit + "</td>";
-            ShoppingcartTable += "<td width=\"120px\">";
+            ShoppingcartTable += "<tr style=\"color: white;\">";
+            ShoppingcartTable += "<td width=\"50%\" style=\"text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\">" + ShoppingCartObject[k].title + "</td>";
+            ShoppingcartTable += "<td style=\"text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\">" + ShoppingCartObject[k].number + " " + ShoppingCartObject[k].unit + "</td>";
+            ShoppingcartTable += "<td>";
             ShoppingcartTable += "<img onClick=\"ChangeProductShoppingCart('" + category + "','" + ShoppingCartObject[k].title + "', '" + ShoppingCartObject[k].number + "', '" +  ShoppingCartObject[k].unit + "')\" src=\"Images/editbutton.png\">";
             ShoppingcartTable += "<img onClick=\"DeleteProductFromShoppingCart('" + category + "', '" + ShoppingCartObject[k].title + "', '" + ShoppingCartObject[k].number + "', '" + ShoppingCartObject[k].unit + "')\" src=\"Images/deletebutton.png\">";
             ShoppingcartTable += "</td>";
@@ -405,10 +411,7 @@ function insertProductWindowHTML() {
     productWindowHTML +=        "<div class=\"unitvalueplural\"></div>";
     productWindowHTML +=    "</div>";
 
-    
-
     document.querySelector(".productwindowbackground").innerHTML = productWindowHTML;
-
 }
 
 function RepairAllLinks() {

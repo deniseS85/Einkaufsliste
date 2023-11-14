@@ -12,73 +12,74 @@
 	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-	<h1>Ibifood</h1>
+	<div class="shopping-list-container">
+		<h1>Ibifood</h1>
 
-	<div class="returnbutton">
-		<img src="Images/pfeil.png" onclick="history.back()">
+		<div class="returnbutton">
+			<img src="Images/pfeil.png" onclick="history.back()">
+		</div>
+
+		<div class="shoppingcart">
+			<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+			<span onclick="window.location.href='shoppingcart.html'" id="shoppingCartProductTotal" class="number">2</span>
+		</div>
+
+		<div class="productList">
+			<img src="Images/mantequilla.png" loading="lazy" onclick="showproductwindow(this)" name="Mantequilla 2kg">
+			<img src="Images/mozzarella.png" loading="lazy" onclick="showproductwindow(this)" name="Mozzarella picada">
+			<img src="Images/cabra.png" loading="lazy" onclick="showproductwindow(this)" name="Queso de cabra">
+			<img src="Images/mantequillahierbas.png" loading="lazy" onclick="showproductwindow(this)" name="Mantequilla de hierbas">
+			<img src="Images/huevoclara.png" loading="lazy" onclick="showproductwindow(this)" name="Huevo clara">
+			<img src="Images/nataagria.png" loading="lazy" onclick="showproductwindow(this)" name="Nata agria">
+			<img src="Images/feta.png" loading="lazy" onclick="showproductwindow(this)" name="Queso de feta">
+			<img src="Images/burrata.png" loading="lazy" onclick="showproductwindow(this)" name="Burrata">
+			<img src="Images/parmesan.png" loading="lazy" onclick="showproductwindow(this)" name="Parmesano">
+			<img src="Images/edamer.png" loading="lazy" onclick="showproductwindow(this)" name="Edamer">
+			<!-- <img src="Images/jamoncocido.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten cocido"> -->
+			<img src="Images/salmonahumado.png" loading="lazy" onclick="showproductwindow(this)" name="Salm&oacuten ahumado">
+			<img src="Images/boquerones.png" loading="lazy" onclick="showproductwindow(this)" name="Boquerones">
+			<img src="Images/langostino.png" loading="lazy" onclick="showproductwindow(this)" name="Langostinos">
+			<img src="Images/salchicha.png" loading="lazy" onclick="showproductwindow(this)" name="Salchicha Alem&aacuten">
+			<img src="Images/edamame.png" loading="lazy" onclick="showproductwindow(this)" name="Edamame">
+			<img src="Images/beyondburger.png" loading="lazy" onclick="showproductwindow(this)" name="Beyondburger">
+			<img src="Images/sambaloelec.png" loading="lazy" onclick="showproductwindow(this)" name="Sambal Oelec">
+			<img src="Images/pesto.png" loading="lazy" onclick="showproductwindow(this)" name="Pesto">
+			<img src="Images/rabano.png" loading="lazy" onclick="showproductwindow(this)" name="Rabano">
+			<img src="Images/wasabi.png" loading="lazy" onclick="showproductwindow(this)" name="Wasabi">
+			<img src="Images/lechecoco.png" loading="lazy" onclick="showproductwindow(this)" name="Leche de coco">
+			<img src="Images/caldovegetal.png" loading="lazy" onclick="showproductwindow(this)" name="Caldo vegetal">
+			<img src="Images/soja.png" loading="lazy" onclick="showproductwindow(this)" name="Soja">
+			<img src="Images/pinones.png" loading="lazy" onclick="showproductwindow(this)" name="Pi&ntildeones">
+			<img src="Images/aceitesesamo.png" loading="lazy" onclick="showproductwindow(this)" name="Aceite de s&eacutesamo">
+			<img src="Images/pimientaroja.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta roja">
+			<!-- <img src="Images/pasta.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta Linguine"> -->
+			<img src="Images/mielcana.png" loading="lazy" onclick="showproductwindow(this)" name="Miel de ca&ntildea">
+			<img src="Images/vanillaextract.png" loading="lazy" onclick="showproductwindow(this)" name="Extracto de vainilla">
+			<img src="Images/mangochutney.png" loading="lazy" onclick="showproductwindow(this)" name="Mango Chutney">
+			<img src="Images/puretomate.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de tomate">
+			<img src="Images/pimentondelavera.png" loading="lazy" onclick="showproductwindow(this)" name="Piment&oacuten de la vera">
+			<img src="Images/tenedorpommes.png" loading="lazy" onclick="showproductwindow(this)" name="Tenedores de patatas fritas">
+			<img src="Images/ketchup.png" loading="lazy" onclick="showproductwindow(this)" name="Ketchup 5l">
+			<img src="Images/mostaza.png" loading="lazy" onclick="showproductwindow(this)" name="Mostaza 5l">
+			<img src="Images/mermelada.png" loading="lazy" onclick="showproductwindow(this)" name="Mermelada de fresa">
+			<img src="Images/mostazagrainy.png" loading="lazy" onclick="showproductwindow(this)" name="Mostaza grainy">
+			<img src="Images/bovril.png" loading="lazy" onclick="showproductwindow(this)" name="Bovril">
+			<img src="Images/pimientaverde.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta verde">
+			<img src="Images/sweetchilisauce.png" loading="lazy" onclick="showproductwindow(this)" name="Salsa de sweet chili">
+			<img src="Images/vinagrebalsamico.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre de bals&aacutemico">
+			<img src="Images/panrallado.png" loading="lazy" onclick="showproductwindow(this)" name="Pan rallado">
+			<img src="Images/arroz.png" loading="lazy" onclick="showproductwindow(this)" name="Arroz">
+			<img src="Images/pangambas.png" loading="lazy" onclick="showproductwindow(this)" name="Pan de gambas">
+			<img src="Images/panko.png" loading="lazy" onclick="showproductwindow(this)" name="Panko">
+			<img src="Images/tartamanzana.png" loading="lazy" onclick="showproductwindow(this)" name="Tarta de manzana">
+			<img src="Images/solomillo.png" loading="lazy" onclick="showproductwindow(this)" name="Solomillo">
+			<img src="Images/alcaparrones.png" loading="lazy" onclick="showproductwindow(this)" name="Alcaparrones">
+			<!-- <img src="Images/frutossecos.png" loading="lazy" onclick="showproductwindow(this)" name="Frutos Secos"> -->
+			<img src="Images/purefresa.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de fresa">
+			<img src="Images/puremango.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de mango">
+			<img src="Images/puremaracuja.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de maracuya">
+		</div>
+
+		<div class="productwindowbackground"></div>
 	</div>
-
-	<div class="shoppingcart">
-		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
-		<span id="shoppingCartProductTotal" class="number">2</span>
-	</div>
-
-	<div class="productList">
-		<img src="Images/mantequilla.png" loading="lazy" onclick="showproductwindow(this)" name="Mantequilla 2kg">
-		<img src="Images/mozzarella.png" loading="lazy" onclick="showproductwindow(this)" name="Mozzarella picada">
-		<img src="Images/cabra.png" loading="lazy" onclick="showproductwindow(this)" name="Queso de cabra">
-		<img src="Images/mantequillahierbas.png" loading="lazy" onclick="showproductwindow(this)" name="Mantequilla de hierbas">
-		<img src="Images/huevoclara.png" loading="lazy" onclick="showproductwindow(this)" name="Huevo clara">
-		<img src="Images/nataagria.png" loading="lazy" onclick="showproductwindow(this)" name="Nata agria">
-		<img src="Images/feta.png" loading="lazy" onclick="showproductwindow(this)" name="Queso de feta">
-		<img src="Images/burrata.png" loading="lazy" onclick="showproductwindow(this)" name="Burrata">
-		<img src="Images/parmesan.png" loading="lazy" onclick="showproductwindow(this)" name="Parmesano">
-		<img src="Images/edamer.png" loading="lazy" onclick="showproductwindow(this)" name="Edamer">
-		<!-- <img src="Images/jamoncocido.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten cocido"> -->
-		<img src="Images/salmonahumado.png" loading="lazy" onclick="showproductwindow(this)" name="Salm&oacuten ahumado">
-		<img src="Images/boquerones.png" loading="lazy" onclick="showproductwindow(this)" name="Boquerones">
-		<img src="Images/langostino.png" loading="lazy" onclick="showproductwindow(this)" name="Langostinos">
-		<img src="Images/salchicha.png" loading="lazy" onclick="showproductwindow(this)" name="Salchicha Alem&aacuten">
-		<img src="Images/edamame.png" loading="lazy" onclick="showproductwindow(this)" name="Edamame">
-		<img src="Images/beyondburger.png" loading="lazy" onclick="showproductwindow(this)" name="Beyondburger">
-		<img src="Images/sambaloelec.png" loading="lazy" onclick="showproductwindow(this)" name="Sambal Oelec">
-		<img src="Images/pesto.png" loading="lazy" onclick="showproductwindow(this)" name="Pesto">
-		<img src="Images/rabano.png" loading="lazy" onclick="showproductwindow(this)" name="Rabano">
-		<img src="Images/wasabi.png" loading="lazy" onclick="showproductwindow(this)" name="Wasabi">
-		<img src="Images/lechecoco.png" loading="lazy" onclick="showproductwindow(this)" name="Leche de coco">
-		<img src="Images/caldovegetal.png" loading="lazy" onclick="showproductwindow(this)" name="Caldo vegetal">
-		<img src="Images/soja.png" loading="lazy" onclick="showproductwindow(this)" name="Soja">
-		<img src="Images/pinones.png" loading="lazy" onclick="showproductwindow(this)" name="Pi&ntildeones">
-		<img src="Images/aceitesesamo.png" loading="lazy" onclick="showproductwindow(this)" name="Aceite de s&eacutesamo">
-		<img src="Images/pimientaroja.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta roja">
-		<!-- <img src="Images/pasta.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta Linguine"> -->
-		<img src="Images/mielcana.png" loading="lazy" onclick="showproductwindow(this)" name="Miel de ca&ntildea">
-		<img src="Images/vanillaextract.png" loading="lazy" onclick="showproductwindow(this)" name="Extracto de vainilla">
-		<img src="Images/mangochutney.png" loading="lazy" onclick="showproductwindow(this)" name="Mango Chutney">
-		<img src="Images/puretomate.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de tomate">
-		<img src="Images/pimentondelavera.png" loading="lazy" onclick="showproductwindow(this)" name="Piment&oacuten de la vera">
-		<img src="Images/tenedorpommes.png" loading="lazy" onclick="showproductwindow(this)" name="Tenedores de patatas fritas">
-		<img src="Images/ketchup.png" loading="lazy" onclick="showproductwindow(this)" name="Ketchup 5l">
-		<img src="Images/mostaza.png" loading="lazy" onclick="showproductwindow(this)" name="Mostaza 5l">
-		<img src="Images/mermelada.png" loading="lazy" onclick="showproductwindow(this)" name="Mermelada de fresa">
-		<img src="Images/mostazagrainy.png" loading="lazy" onclick="showproductwindow(this)" name="Mostaza grainy">
-		<img src="Images/bovril.png" loading="lazy" onclick="showproductwindow(this)" name="Bovril">
-		<img src="Images/pimientaverde.png" loading="lazy" onclick="showproductwindow(this)" name="Pimienta verde">
-		<img src="Images/sweetchilisauce.png" loading="lazy" onclick="showproductwindow(this)" name="Salsa de sweet chili">
-		<img src="Images/vinagrebalsamico.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre de bals&aacutemico">
-		<img src="Images/panrallado.png" loading="lazy" onclick="showproductwindow(this)" name="Pan rallado">
-		<img src="Images/arroz.png" loading="lazy" onclick="showproductwindow(this)" name="Arroz">
-		<img src="Images/pangambas.png" loading="lazy" onclick="showproductwindow(this)" name="Pan de gambas">
-		<img src="Images/panko.png" loading="lazy" onclick="showproductwindow(this)" name="Panko">
-		<img src="Images/tartamanzana.png" loading="lazy" onclick="showproductwindow(this)" name="Tarta de manzana">
-		<img src="Images/solomillo.png" loading="lazy" onclick="showproductwindow(this)" name="Solomillo">
-		<img src="Images/alcaparrones.png" loading="lazy" onclick="showproductwindow(this)" name="Alcaparrones">
-		<!-- <img src="Images/frutossecos.png" loading="lazy" onclick="showproductwindow(this)" name="Frutos Secos"> -->
-		<img src="Images/purefresa.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de fresa">
-		<img src="Images/puremango.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de mango">
-		<img src="Images/puremaracuja.png" loading="lazy" onclick="showproductwindow(this)" name="Pur&eacute de maracuya">
-	</div>
-
-	<div class="productwindowbackground"></div>
-	
 </body>

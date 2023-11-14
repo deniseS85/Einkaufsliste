@@ -12,35 +12,37 @@
 	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-	<h1>Cash Lotto</h1>
+	<div class="shopping-list-container">
+		<h1>Cash Lotto</h1>
 
-	<div class="returnbutton">
-		<img src="Images/pfeil.png" onclick="history.back()">
+		<div class="returnbutton">
+			<img src="Images/pfeil.png" onclick="history.back()">
+		</div>
+
+		<div class="shoppingcart">
+			<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+			<span onclick="window.location.href='shoppingcart.html'" id="shoppingCartProductTotal" class="number">2</span>
+		</div>
+
+		<div class="productList">
+			<img src="Images/jamoncocido.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten cocido">
+			<img src="Images/solis.png" loading="lazy" onclick="showproductwindow(this)" name="Solis">
+			<img src="Images/pasta.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta Linguine">
+			<img src="Images/vinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre">
+			<img src="Images/Nutella.png" loading="lazy" onclick="showproductwindow(this)" name="Nutella en porciones">
+			<img src="Images/walnut.png" loading="lazy" onclick="showproductwindow(this)" name="Nueces">
+			<img src="Images/frutossecos.png" loading="lazy" onclick="showproductwindow(this)" name="Frutos Secos">
+			<img src="Images/sanytol.png" loading="lazy" onclick="showproductwindow(this)" name="Sanytol">
+			<img src="Images/aceitunas.png" loading="lazy" onclick="showproductwindow(this)" name="Aceitunas">
+			<img src="Images/guindillas.png" loading="lazy" onclick="showproductwindow(this)" name="Guindillas">
+			<img src="Images/ajovinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo en vinagre">
+			<img src="Images/plasticbag.png" loading="lazy" onclick="showproductwindow(this)" name="Bolsa de frescura">
+			<img src="Images/sonnenblumenkerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de girasol">
+			<img src="Images/kurbiskerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de calabaza">
+
+		</div>
+
+		<div class="productwindowbackground"></div>
 	</div>
-
-	<div class="shoppingcart">
-		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
-		<span id="shoppingCartProductTotal" class="number">2</span>
-	</div>
-
-	<div class="productList">
-		<img src="Images/jamoncocido.png" loading="lazy" onclick="showproductwindow(this)" name="Jam&oacuten cocido">
-		<img src="Images/solis.png" loading="lazy" onclick="showproductwindow(this)" name="Solis">
-		<img src="Images/pasta.png" loading="lazy" onclick="showproductwindow(this)" name="Pasta Linguine">
-		<img src="Images/vinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Vinagre">
-		<img src="Images/Nutella.png" loading="lazy" onclick="showproductwindow(this)" name="Nutella en porciones">
-		<img src="Images/walnut.png" loading="lazy" onclick="showproductwindow(this)" name="Nueces">
-		<img src="Images/frutossecos.png" loading="lazy" onclick="showproductwindow(this)" name="Frutos Secos">
-		<img src="Images/sanytol.png" loading="lazy" onclick="showproductwindow(this)" name="Sanytol">
-		<img src="Images/aceitunas.png" loading="lazy" onclick="showproductwindow(this)" name="Aceitunas">
-		<img src="Images/guindillas.png" loading="lazy" onclick="showproductwindow(this)" name="Guindillas">
-		<img src="Images/ajovinagre.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo en vinagre">
-        <img src="Images/plasticbag.png" loading="lazy" onclick="showproductwindow(this)" name="Bolsa de frescura">
-        <img src="Images/sonnenblumenkerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de girasol">
-		<img src="Images/kurbiskerne.png" loading="lazy" onclick="showproductwindow(this)" name="Semillas de calabaza">
-
-	</div>
-
-	<div class="productwindowbackground"></div>
 
 </body>

@@ -12,30 +12,32 @@
 	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-	<h1>Calimax</h1>
+	<div class="shopping-list-container">
+		<h1>Calimax</h1>
 
-	<div class="returnbutton">
-		<img src="Images/pfeil.png" onclick="history.back()">
-	</div>
+		<div class="returnbutton">
+			<img src="Images/pfeil.png" onclick="history.back()">
+		</div>
 
-	<div class="shoppingcart">
-		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
-		<span id="shoppingCartProductTotal" class="number">2</span>
-	</div>
+		<div class="shoppingcart">
+			<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+			<span onclick="window.location.href='shoppingcart.html'" id="shoppingCartProductTotal" class="number">2</span>
+		</div>
 
-	<div class="productList">
-		<img src="Images/pommes.png" loading="lazy" onclick="showproductwindow(this)" name="Patata fritas Steakhouse">
-		<img src="Images/barra.png" loading="lazy" onclick="showproductwindow(this)" name="Pan reserva">
-		<img src="Images/pancerealis.png" loading="lazy" onclick="showproductwindow(this)" name="Pan cerealis">
-		<img src="Images/bocata.png" loading="lazy" onclick="showproductwindow(this)" name="Pan bocata">
-		<img src="Images/pancristal.png" loading="lazy" onclick="showproductwindow(this)" name="Pan cristal">
-		<img src="Images/panhamburgesa.png" loading="lazy" onclick="showproductwindow(this)" name="Pan hamburgesa">
-		<img src="Images/croissant.png" loading="lazy" onclick="showproductwindow(this)" name="Croissant">
-		<img src="Images/gallo.png" loading="lazy" onclick="showproductwindow(this)" name="Filete de gallo">
-		<img src="Images/smoothiefresa.png" loading="lazy" onclick="showproductwindow(this)" name="Smoothie fresa platano">
-		<img src="Images/smoothiemango.png" loading="lazy" onclick="showproductwindow(this)" name="Smoothie mango">
+		<div class="productList">
+			<img src="Images/pommes.png" loading="lazy" onclick="showproductwindow(this)" name="Patata fritas Steakhouse">
+			<img src="Images/barra.png" loading="lazy" onclick="showproductwindow(this)" name="Pan reserva">
+			<img src="Images/pancerealis.png" loading="lazy" onclick="showproductwindow(this)" name="Pan cerealis">
+			<img src="Images/bocata.png" loading="lazy" onclick="showproductwindow(this)" name="Pan bocata">
+			<img src="Images/pancristal.png" loading="lazy" onclick="showproductwindow(this)" name="Pan cristal">
+			<img src="Images/panhamburgesa.png" loading="lazy" onclick="showproductwindow(this)" name="Pan hamburgesa">
+			<img src="Images/croissant.png" loading="lazy" onclick="showproductwindow(this)" name="Croissant">
+			<img src="Images/gallo.png" loading="lazy" onclick="showproductwindow(this)" name="Filete de gallo">
+			<img src="Images/smoothiefresa.png" loading="lazy" onclick="showproductwindow(this)" name="Smoothie fresa platano">
+			<img src="Images/smoothiemango.png" loading="lazy" onclick="showproductwindow(this)" name="Smoothie mango">
+		</div>
+		
+		<div class="productwindowbackground"></div>
 	</div>
-	
-	<div class="productwindowbackground"></div>
 	
 </body>

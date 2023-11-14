@@ -12,30 +12,32 @@
 	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-	<h1>Verduras</h1>
+	<div class="shopping-list-container">
+		<h1>Verduras</h1>
 
-	<div class="returnbutton">
-		<img src="Images/pfeil.png" onclick="history.back()">
-	</div>
+		<div class="returnbutton">
+			<img src="Images/pfeil.png" onclick="history.back()">
+		</div>
 
-	<div class="shoppingcart">
-		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
-		<span id="shoppingCartProductTotal" class="number">2</span>
-	</div>
+		<div class="shoppingcart">
+			<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+			<span onclick="window.location.href='shoppingcart.html'" id="shoppingCartProductTotal" class="number">2</span>
+		</div>
 
-	<div class="productList">
+		<div class="productList">
+			
+			<!-- <img src="Images/pimientoamarillo.png" loading="lazy" onclick="showproductwindow(this)" name="Pimiento amarillo"> -->
+			<img src="Images/tomateloncha.png" loading="lazy" onclick="showproductwindow(this)" name="Tomate grande">
+			<img src="Images/cebollaverde.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla verde">
+			<img src="Images/packchoy.png" loading="lazy" onclick="showproductwindow(this)" name="Packchoy">
+			<img src="Images/ajopelado.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo pelado">
+			<img src="Images/estrago.png" loading="lazy" onclick="showproductwindow(this)" name="Estrago">
+			<img src="Images/cebolla.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla">
+			<img src="Images/patatas.png" loading="lazy" onclick="showproductwindow(this)" name="Patatas blancas">
+
+		</div>
 		
-		<!-- <img src="Images/pimientoamarillo.png" loading="lazy" onclick="showproductwindow(this)" name="Pimiento amarillo"> -->
-		<img src="Images/tomateloncha.png" loading="lazy" onclick="showproductwindow(this)" name="Tomate grande">
-		<img src="Images/cebollaverde.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla verde">
-		<img src="Images/packchoy.png" loading="lazy" onclick="showproductwindow(this)" name="Packchoy">
-		<img src="Images/ajopelado.png" loading="lazy" onclick="showproductwindow(this)" name="Ajo pelado">
-		<img src="Images/estrago.png" loading="lazy" onclick="showproductwindow(this)" name="Estrago">
-		<img src="Images/cebolla.png" loading="lazy" onclick="showproductwindow(this)" name="Cebolla">
-		<img src="Images/patatas.png" loading="lazy" onclick="showproductwindow(this)" name="Patatas blancas">
-
+		<div class="productwindowbackground"></div>
 	</div>
-	
-	<div class="productwindowbackground"></div>
 
 </body>

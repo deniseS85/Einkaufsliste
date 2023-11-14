@@ -12,27 +12,29 @@
 	<script type="text/javascript" charset="UTF-8" src="main.js"></script>
 </head>
 <body>
-	<h1>Hierbas</h1>
+	<div class="shopping-list-container">
+		<h1>Hierbas</h1>
 
-	<div class="returnbutton">
-		<img src="Images/pfeil.png" onclick="history.back()">
+		<div class="returnbutton">
+			<img src="Images/pfeil.png" onclick="history.back()">
+		</div>
+
+		<div class="shoppingcart">
+			<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
+			<span onclick="window.location.href='shoppingcart.html'" id="shoppingCartProductTotal" class="number">2</span>
+		</div>
+
+		<div class="productList">
+
+			<img src="Images/perejil.png" loading="lazy" onclick="showproductwindow(this)" name="Perejil">
+			<img src="Images/albahaca.png" loading="lazy" onclick="showproductwindow(this)" name="Albahaca">
+			<img src="Images/menta.png" loading="lazy" onclick="showproductwindow(this)" name="Menta">
+			<img src="Images/avocado.png" loading="lazy" onclick="showproductwindow(this)" name="Aguacate mediano">
+			<!-- <img src="Images/naranja.png" loading="lazy" onclick="showproductwindow(this)" name="Naranja"> -->
+
+		</div>
+		
+		<div class="productwindowbackground"></div>
 	</div>
-
-	<div class="shoppingcart">
-		<a href="shoppingcart.html"><img src="Images/shoppingcarticon.png"></a>
-		<span id="shoppingCartProductTotal" class="number">2</span>
-	</div>
-
-	<div class="productList">
-
-		<img src="Images/perejil.png" loading="lazy" onclick="showproductwindow(this)" name="Perejil">
-		<img src="Images/albahaca.png" loading="lazy" onclick="showproductwindow(this)" name="Albahaca">
-		<img src="Images/menta.png" loading="lazy" onclick="showproductwindow(this)" name="Menta">
-		<img src="Images/avocado.png" loading="lazy" onclick="showproductwindow(this)" name="Aguacate mediano">
-		<!-- <img src="Images/naranja.png" loading="lazy" onclick="showproductwindow(this)" name="Naranja"> -->
-
-	</div>
-	
-	<div class="productwindowbackground"></div>
 
 </body>
